@@ -2,7 +2,7 @@ node_modules
 tags
 **/*.js.map
 **/*.metadata.json
-
+gen
 app/**/*.js
 app/global.d.ts
 platforms
