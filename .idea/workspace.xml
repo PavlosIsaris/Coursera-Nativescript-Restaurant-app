@@ -9,7 +9,6 @@
     <list default="true" id="3268c5eb-31ac-447b-a932-41e5a1b0063a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/about/about.component.html" afterPath="$PROJECT_DIR$/app/about/about.component.html" />
-      <change beforePath="$PROJECT_DIR$/app/about/about.component.ts" afterPath="$PROJECT_DIR$/app/about/about.component.ts" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +19,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="about.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="about.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/about/about.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="432">
@@ -44,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.component.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="about.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/about/about.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+            <state relative-caret-position="512">
+              <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -120,8 +119,8 @@
         <option value="$PROJECT_DIR$/app/app.module.ts" />
         <option value="$PROJECT_DIR$/app/shared/drawer/drawer.component.html" />
         <option value="$PROJECT_DIR$/app/about/about.component.css" />
-        <option value="$PROJECT_DIR$/app/about/about.component.html" />
         <option value="$PROJECT_DIR$/app/about/about.component.ts" />
+        <option value="$PROJECT_DIR$/app/about/about.component.html" />
       </list>
     </option>
   </component>
@@ -344,12 +343,12 @@
       <workItem from="1514927653207" duration="140000" />
       <workItem from="1515392350172" duration="94000" />
       <workItem from="1515619342115" duration="27000" />
-      <workItem from="1515825204954" duration="9646000" />
+      <workItem from="1515825204954" duration="10199000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11519000" />
+    <option name="totallyTimeSpent" value="12072000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -805,14 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/about/about.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/home/home.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -828,6 +819,14 @@
           <folding>
             <element signature="e#0#75#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/about/about.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
