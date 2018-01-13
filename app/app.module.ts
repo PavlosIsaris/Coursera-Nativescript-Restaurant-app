@@ -22,6 +22,7 @@ import {HomeComponent} from "./home/home.component";
 import {LeaderService} from "./services/leader.service";
 import {PromotionService} from "./services/promotion.service";
 import {ContactComponent} from "./contact/contact.component";
+import {AboutComponent} from "./about/about.component";
 
 @NgModule({
     bootstrap: [
@@ -39,7 +40,8 @@ import {ContactComponent} from "./contact/contact.component";
         DishdetailComponent,
         DrawerComponent,
         HomeComponent,
-        ContactComponent
+        ContactComponent,
+        AboutComponent
     ],
     providers: [
         {provide: 'BaseURL', useValue: baseURL},
