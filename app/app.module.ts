@@ -15,6 +15,12 @@ import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
 
 import { baseURL } from './shared/baseurl';
 import {MenuComponent} from "./menu/menu.component";
+import {DishdetailComponent} from "./dishdetail/dishdetail.component";
+import {NativeScriptUISideDrawerModule} from "nativescript-telerik-ui/sidedrawer/angular";
+import {DrawerComponent} from "./shared/drawer/drawer.component";
+import {HomeComponent} from "./home/home.component";
+import {LeaderService} from "./services/leader.service";
+import {PromotionService} from "./services/promotion.service";
 
 @NgModule({
     bootstrap: [
@@ -23,16 +29,22 @@ import {MenuComponent} from "./menu/menu.component";
     imports: [
         NativeScriptModule,
         AppRoutingModule,
-        NativeScriptHttpModule
+        NativeScriptHttpModule,
+        NativeScriptUISideDrawerModule
     ],
     declarations: [
         AppComponent,
-        MenuComponent
+        MenuComponent,
+        DishdetailComponent,
+        DrawerComponent,
+        HomeComponent
     ],
     providers: [
         {provide: 'BaseURL', useValue: baseURL},
         DishService,
-        ProcessHTTPMsgService
+        ProcessHTTPMsgService,
+        PromotionService,
+        LeaderService
     ],
     schemas: [
         NO_ERRORS_SCHEMA
