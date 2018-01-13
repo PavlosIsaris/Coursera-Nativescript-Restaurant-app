@@ -21,6 +21,7 @@ import {DrawerComponent} from "./shared/drawer/drawer.component";
 import {HomeComponent} from "./home/home.component";
 import {LeaderService} from "./services/leader.service";
 import {PromotionService} from "./services/promotion.service";
+import {ContactComponent} from "./contact/contact.component";
 
 @NgModule({
     bootstrap: [
@@ -37,7 +38,8 @@ import {PromotionService} from "./services/promotion.service";
         MenuComponent,
         DishdetailComponent,
         DrawerComponent,
-        HomeComponent
+        HomeComponent,
+        ContactComponent
     ],
     providers: [
         {provide: 'BaseURL', useValue: baseURL},
