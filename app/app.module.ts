@@ -24,6 +24,7 @@ import {PromotionService} from "./services/promotion.service";
 import {ContactComponent} from "./contact/contact.component";
 import {AboutComponent} from "./about/about.component";
 import {TNSFontIconModule} from "nativescript-ngx-fonticon";
+import {FavoriteService} from "./services/favorite.service";
 
 @NgModule({
     bootstrap: [
@@ -52,7 +53,8 @@ import {TNSFontIconModule} from "nativescript-ngx-fonticon";
         DishService,
         ProcessHTTPMsgService,
         PromotionService,
-        LeaderService
+        LeaderService,
+        FavoriteService
     ],
     schemas: [
         NO_ERRORS_SCHEMA
