@@ -25,6 +25,8 @@ import {ContactComponent} from "./contact/contact.component";
 import {AboutComponent} from "./about/about.component";
 import {TNSFontIconModule} from "nativescript-ngx-fonticon";
 import {FavoriteService} from "./services/favorite.service";
+import {NativeScriptUIListViewModule} from "nativescript-telerik-ui/listview/angular";
+import {FavoritesComponent} from "./favorites/favorites.component";
 
 @NgModule({
     bootstrap: [
@@ -35,6 +37,8 @@ import {FavoriteService} from "./services/favorite.service";
         AppRoutingModule,
         NativeScriptHttpModule,
         NativeScriptUISideDrawerModule,
+        NativeScriptUIListViewModule,
+        FavoritesComponent,
         TNSFontIconModule.forRoot({
             'fa': './fonts/font-awesome.min.css'
         })

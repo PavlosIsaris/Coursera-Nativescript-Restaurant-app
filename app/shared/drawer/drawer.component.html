@@ -27,4 +27,10 @@
         <Label row="0" col="0" class="sidedrawer-list-item-text fa" [text]="'fa-address-card' | fonticon"></Label>
         <Label row="0" col="1" class="sidedrawer-list-item-text" text="Contact Us"></Label>
     </GridLayout>
+    <GridLayout class="sidedrawer-list-item" rows="*" columns="50, *"
+                orientation="horizontal"
+                [nsRouterLink]="['/favorites']" clearHistory="true">
+        <Label row="0" col="0" class="sidedrawer-list-item-text fa" text="'fa-heart' | fonticon"></Label>
+        <Label row="0" col="1" class="sidedrawer-list-item-text" text="My Favorites"></Label>
+    </GridLayout>
 </StackLayout>
