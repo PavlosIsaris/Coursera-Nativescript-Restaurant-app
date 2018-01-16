@@ -23,6 +23,7 @@ import {LeaderService} from "./services/leader.service";
 import {PromotionService} from "./services/promotion.service";
 import {ContactComponent} from "./contact/contact.component";
 import {AboutComponent} from "./about/about.component";
+import {TNSFontIconModule} from "nativescript-ngx-fonticon";
 
 @NgModule({
     bootstrap: [
@@ -32,7 +33,10 @@ import {AboutComponent} from "./about/about.component";
         NativeScriptModule,
         AppRoutingModule,
         NativeScriptHttpModule,
-        NativeScriptUISideDrawerModule
+        NativeScriptUISideDrawerModule,
+        TNSFontIconModule.forRoot({
+            'fa': './fonts/font-awesome.min.css'
+        })
     ],
     declarations: [
         AppComponent,
