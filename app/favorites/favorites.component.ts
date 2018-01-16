@@ -5,6 +5,7 @@ import { ListViewEventData, RadListView } from 'nativescript-telerik-ui/listview
 import { RadListViewComponent } from 'nativescript-telerik-ui/listview/angular';
 import { ObservableArray } from 'tns-core-modules/data/observable-array';
 import { DrawerPage } from '../shared/drawer/drawer.page';
+import {View} from "tns-core-modules/ui/core/view";
 @Component({
     selector: 'app-favorites',
     moduleId: module.id,
@@ -53,8 +54,8 @@ export class FavoritesComponent extends DrawerPage implements OnInit {
         var swipeLimits = args.data.swipeLimits;
         var swipeView = args['object'];
 
-        var leftItem = swipeView.getViewById('mark-view');
-        var rightItem = swipeView.getViewById('delete-view');
+        var leftItem = swipeView.getViewById<View>('mark-view');
+        var rightItem = swipeView.getViewById<View>('delete-view');
         swipeLimits.left = leftItem.getMeasuredWidth();
         swipeLimits.right = rightItem.getMeasuredWidth();
         swipeLimits.threshold = leftItem.getMeasuredWidth()/2;
