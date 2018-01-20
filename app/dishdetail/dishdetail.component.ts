@@ -8,6 +8,7 @@ import 'rxjs/add/operator/switchMap';
 import {TNSFontIconService} from "nativescript-ngx-fonticon";
 import {FavoriteService} from "../services/favorite.service";
 import {Toasty} from "nativescript-toasty";
+import {action} from "tns-core-modules/ui/dialogs";
 
 @Component({
     selector: 'app-dishdetail',
@@ -58,5 +59,23 @@ export class DishdetailComponent implements OnInit {
 
     goBack(): void {
         this.routerExtensions.back();
+    }
+
+    showDialog(): void {
+        let options = {
+            title: "Actions",
+            message: "Select an Action",
+            cancelButtonText: "Cancel",
+            actions: ["Add to Favorites", "Add Comment"]
+        };
+
+        action(options).then((result) => {
+            console.log(result);
+            // switch(result) {
+            //     case 0:
+            //         this.addToFavorites();
+            //         break;
+            // }
+        });
     }
 }
