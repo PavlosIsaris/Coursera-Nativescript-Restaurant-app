@@ -29,6 +29,7 @@ import {NativeScriptUIListViewModule} from "nativescript-telerik-ui/listview/ang
 import {FavoritesComponent} from "./favorites/favorites.component";
 import {ReactiveFormsModule} from "@angular/forms";
 import {ReservationComponent} from "./reservation/reservation.component";
+import {ReservationModalComponent} from "./reservationmodal/reservationmodal.component";
 
 @NgModule({
     bootstrap: [
@@ -55,8 +56,10 @@ import {ReservationComponent} from "./reservation/reservation.component";
         HomeComponent,
         ContactComponent,
         AboutComponent,
-        ReservationComponent
+        ReservationComponent,
+        ReservationModalComponent
     ],
+    entryComponents: [ReservationModalComponent],
     providers: [
         {provide: 'BaseURL', useValue: baseURL},
         DishService,
