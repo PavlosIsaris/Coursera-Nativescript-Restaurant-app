@@ -71,11 +71,11 @@ export class DishdetailComponent implements OnInit {
 
         action(options).then((result) => {
             console.log(result);
-            // switch(result) {
-            //     case 0:
-            //         this.addToFavorites();
-            //         break;
-            // }
+            switch(result) {
+                case "Add to Favorites":
+                    this.addToFavorites();
+                    break;
+            }
         });
     }
 }

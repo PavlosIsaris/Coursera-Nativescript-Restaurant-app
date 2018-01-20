@@ -41,7 +41,6 @@ import {ReservationModalComponent} from "./reservationmodal/reservationmodal.com
         NativeScriptHttpModule,
         NativeScriptUISideDrawerModule,
         NativeScriptUIListViewModule,
-        FavoritesComponent,
         NativeScriptFormsModule,
         ReactiveFormsModule,
         TNSFontIconModule.forRoot({
@@ -57,7 +56,8 @@ import {ReservationModalComponent} from "./reservationmodal/reservationmodal.com
         ContactComponent,
         AboutComponent,
         ReservationComponent,
-        ReservationModalComponent
+        ReservationModalComponent,
+        FavoritesComponent
     ],
     entryComponents: [ReservationModalComponent],
     providers: [
