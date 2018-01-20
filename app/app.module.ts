@@ -27,6 +27,8 @@ import {TNSFontIconModule} from "nativescript-ngx-fonticon";
 import {FavoriteService} from "./services/favorite.service";
 import {NativeScriptUIListViewModule} from "nativescript-telerik-ui/listview/angular";
 import {FavoritesComponent} from "./favorites/favorites.component";
+import {ReactiveFormsModule} from "@angular/forms";
+import {ReservationComponent} from "./reservation/reservation.component";
 
 @NgModule({
     bootstrap: [
@@ -39,6 +41,8 @@ import {FavoritesComponent} from "./favorites/favorites.component";
         NativeScriptUISideDrawerModule,
         NativeScriptUIListViewModule,
         FavoritesComponent,
+        NativeScriptFormsModule,
+        ReactiveFormsModule,
         TNSFontIconModule.forRoot({
             'fa': './fonts/font-awesome.min.css'
         })
@@ -50,7 +54,8 @@ import {FavoritesComponent} from "./favorites/favorites.component";
         DrawerComponent,
         HomeComponent,
         ContactComponent,
-        AboutComponent
+        AboutComponent,
+        ReservationComponent
     ],
     providers: [
         {provide: 'BaseURL', useValue: baseURL},
