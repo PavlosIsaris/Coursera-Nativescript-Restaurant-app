@@ -1,0 +1,16 @@
+<GridLayout class="m-5" rows="auto auto auto auto" columns="*, *" [formGroup]="comment">
+    <Label class="h3 m-15" row="0" col="0" text="Name" textWrap="true"></Label>
+    <TextField class="input input-border" id="textAuthor"
+               hint="Author" [text]=''
+               (textChange)="onAuthorChange($event)"
+               row="0" col="1" formControlName="author"></TextField>
+    <Label class="h3 m-15" row="1" col="0" text="Comment" textWrap="true"></Label>
+    <TextField class="input input-border" id="textComment"
+               hint="Enter your comment" [text]=''
+               (textChange)="onCommentChange($event)"
+               row="1" col="1" formControlName="comment"></TextField>
+    <Label class="h3 m-15" row="2" col="0" text="Rating" textWrap="true"></Label>
+    <Slider row="2" col="1" minValue="1" maxValue="5" (valueChange)="onRatingSliderChange($event)" formControlName="rating"></Slider>
+    <Button class="btn btn-primary btn-active m-15" row="3" col="0"
+            text="Submit" (tap)="onSubmit()"></Button>
+</GridLayout>
