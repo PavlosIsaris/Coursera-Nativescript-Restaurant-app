@@ -9,6 +9,7 @@ import { Animation, AnimationDefinition } from "ui/animation";
 import {View} from "tns-core-modules/ui/core/view";
 import {Page} from "tns-core-modules/ui/page";
 import * as enums from "ui/enums";
+import {ReservationService} from "../services/reservation.service";
 @Component({
     selector: 'app-reservation',
     moduleId: module.id,
@@ -22,6 +23,7 @@ export class ReservationComponent extends DrawerPage implements OnInit {
 
     constructor(private changeDetectorRef: ChangeDetectorRef,
                 private page: Page,
+                private reservationService: ReservationService,
                 private formBuilder: FormBuilder,private modalService: ModalDialogService,
                 private vcRef: ViewContainerRef) {
         super(changeDetectorRef);
@@ -62,6 +64,7 @@ export class ReservationComponent extends DrawerPage implements OnInit {
         console.log(JSON.stringify(this.reservation.value));
         this.content = <View>this.page.getViewById<View>("content");
         this.animateDiv(this.content, 0,0,0.2).then(() => {
+            this.reservationService.addReservation(this.reservation.value);
             this.formSubmitted = true;
             this.animateDiv(this.content,1,1,1).then(() => {
             }).catch((e) => {

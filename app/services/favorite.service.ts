@@ -18,7 +18,7 @@ export class FavoriteService {
             this.couchbaseService.createDocument({"favorites": []}, this.docId);
         }
         else {
-            this.favorites = doc.favorites;
+            this.favorites = doc.reservations;
         }
     }
 
